@@ -6,7 +6,8 @@ import NavBar from './NavBar';
 import Home from '../../features/home/home';
 import Quotify from '../../features/quotify/quotify';
 import Renderer from '../../features/renderer/renderer';
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
   //add toaster messages for errors
   //Home Page
   // display weather info
-  //sup up sun down info
+  //sun up sun down info
   //make a todo applet
   //show date and all to do for that date
   //add function with popup
@@ -34,6 +35,7 @@ function App() {
         <Route path='/quotify' element={<Quotify />} />
         <Route path='/renderer' element={<Renderer />} />
       </Routes>
+      <ToastContainer />
     </Router>
   );
 }

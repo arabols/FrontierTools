@@ -17,6 +17,7 @@ export default function Renderer() {
 
     const handleSubmit = async () => {
         setLoading(true);
+        setStructureImage("");
         let requestStructure = textInput.replace(/\r?\n/g, "\n");
         const struct: RenderingRequest[] = [{ barcode: "", structure: requestStructure.toString() }];
         try {
